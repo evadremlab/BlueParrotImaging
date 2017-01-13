@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- borrowed from http://www.w3schools.com/howto/tryhow_css_parallax_demo.htm -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu|Pacifico" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+</head>
+<body>
+    <div id="scroll-image">
+      <div class="caption">
+        <span class="border">Blue Parrot Imaging</span>
+      </div>
+    </div>
+
+    <div id="about">
+      <div>
+          <h3>About Blue Parrot Imaging</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales nibh ante, vel mollis dolor pretium vel. In turpis orci, mollis vitae cursus a, tempor rhoncus justo. Vivamus consequat tincidunt dolor, vel aliquam nulla auctor in. Ut nulla felis, fermentum sed tortor non, varius ultricies diam. Mauris eu pulvinar felis. Donec tincidunt fringilla nibh, in dapibus nulla facilisis at. Donec lacinia viverra ornare. Nulla facilisi. Vivamus sit amet eleifend arcu. Donec in accumsan eros. Praesent iaculis elementum nisl, eu placerat purus viverra a. Donec quis nibh sit amet sem bibendum elementum sit amet sit amet lectus.</p>
+          <p>Nunc bibendum, enim at mattis suscipit, orci ligula dignissim ligula, ut bibendum quam mauris nec felis. Etiam convallis pellentesque sem, eu placerat dui pulvinar vel. Mauris tempor tincidunt nunc a congue. Integer cursus ut arcu at placerat. Donec rhoncus nunc lectus, vitae faucibus lorem laoreet nec. Cras sit amet orci urna. Pellentesque semper eleifend tellus, in malesuada justo imperdiet nec.</p>
+      </div>
+      <div class="image-overlay-lines"></div>
+    </div>
+
+    <div id="links">
+        <div class="tile tile-1">
+            <p>Toronto</p>
+        </div>
+        <div class="tile tile-2">
+            <p>Miami</p>
+        </div>
+        <div class="tile tile-3">
+            <p>San Francisco</p>
+        </div>
+        <div class="tile tile-4">
+            <p>Los Angeles</p>
+        </div>
+        <div class="tile tile-5">
+            <p>New York City</p>
+        </div>
+    </div>
+
+    <script>
+        $(function () {
+            $('#links').on('click', 'img', function () {
+                alert($(this).attr('alt'));
+            })
+        })
+    </script>
+</body>
+</html>
