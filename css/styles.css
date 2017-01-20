@@ -1,13 +1,12 @@
 body, html {
     height: 100%;
     margin: 0;
-    font: 400 15px/1.8 "Ubuntu", sans-serif;
+    font: 400 15px/1.8 "Lato", sans-serif;
     color: #000;
 }
 
 #scroll-image {
     position: relative;
-    opacity: 0.95;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -29,9 +28,9 @@ body, html {
     opacity: 0.5;
     color: #ffd700; /* gold */
     padding: 0 1rem 1rem 1rem;
-    font-size: 5rem;
+    font-size: 6rem;
     font-family: "Pacifico";
-    border-radius: 25px 0 25px 0;
+    border-radius: 25px 0;
 }
 
 h3 {
@@ -41,10 +40,10 @@ h3 {
 }
         
 div#about {
-    color: #111;
+    color: #008;
     background-color: #71EEB8; /* sea foam green */
     text-align: center;
-    padding: 50px 80px;
+    padding: 50px 80px 40px 80px;
     text-align: justify;
     position: relative;
 }
@@ -107,7 +106,7 @@ div#links .tile-5 {
     pointer-events: none;
     opacity: 0.1;
     background-repeat: repeat;
-    background-image: url("./images/black-horizontal-lines.png");
+    background-image: url("./images/blue-horizontal-lines.png");
 }
 
 /* Turn off parallax scrolling for tablets and phones */
