@@ -1,51 +1,76 @@
-﻿<!DOCTYPE html>
-<html>
+<!doctype html>
+<html class="no-js" lang="">
 <head>
-    <!-- borrowed from http://www.w3schools.com/howto/tryhow_css_parallax_demo.htm -->
-    <link href="https://fonts.googleapis.com/css?family=Lato|Pacifico" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-    <!--<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>-->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Blue Parrot Imaging</title>
+  <meta name="description" content="???something about Blue Parrot Imaging here???">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!--[if lt IE 9]>
+    <script src="js/vendor/html5shiv.js"></script>
+  <![endif]-->
+  <!--
+  https://image.isu.pub/160120154356-f084eb60a6fb6425c841ed5abaa346e4/jpg/page_1.jpg
+  -->
 </head>
 <body>
-    <div id="scroll-image">
-      <div class="caption">
-        <span class="border">Blue Parrot Imaging</span>
+  <header>
+    <span class="logo pull-left"></span>
+    <span class="title">Blue Parrot Imaging</span>
+    <span class="links pull-right">
+      <a href="#">About</a> | <a href="#">Contact</a>
+    </span>
+  </header>
+  <div class="gallery"></div>
+  <div class="thumbnails">
+    <div class="container-full">
+      <div class="row-full">
+        <div class="bp_thumbnail col-xs-2">
+          <div class="thumbnail-1 image"></div>
+          <div class="thumbnail-caption">birds of paradise</div>
+        </div>
+        <div class="bp_thumbnail col-xs-2">
+          <div class="thumbnail-2 image"></div>
+          <div class="thumbnail-caption">islands in the sun</div>
+        </div>
+        <div class="bp_thumbnail col-xs-2">
+          <div class="thumbnail-3 image"></div>
+          <div class="thumbnail-caption">color in motion</div>
+        </div>
+        <div class="bp_thumbnail col-xs-2">
+          <div class="thumbnail-4 image"></div>
+          <div class="thumbnail-caption">retro coolness</div>
+        </div>
+        <div class="bp_thumbnail col-xs-2">
+          <div class="thumbnail-5 image"></div>
+          <div class="thumbnail-caption">beautiful beaches</div>
+        </div>
+        <div class="bp_thumbnail col-xs-2">
+          <div class="thumbnail-6 image"></div>
+          <div class="thumbnail-caption">sky dance</div>
+        </div>
       </div>
     </div>
-
-    <div id="about">
-      <div>
-          <h3>About Blue Parrot Imaging</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales nibh ante, vel mollis dolor pretium vel. In turpis orci, mollis vitae cursus a, tempor rhoncus justo. Vivamus consequat tincidunt dolor, vel aliquam nulla auctor in. Ut nulla felis, fermentum sed tortor non, varius ultricies diam. Mauris eu pulvinar felis. Donec tincidunt fringilla nibh, in dapibus nulla facilisis at. Donec lacinia viverra ornare. Nulla facilisi. Vivamus sit amet eleifend arcu. Donec in accumsan eros. Praesent iaculis elementum nisl, eu placerat purus viverra a. Donec quis nibh sit amet sem bibendum elementum sit amet sit amet lectus.</p>
-          <p>Nunc bibendum, enim at mattis suscipit, orci ligula dignissim ligula, ut bibendum quam mauris nec felis. Etiam convallis pellentesque sem, eu placerat dui pulvinar vel. Mauris tempor tincidunt nunc a congue. Integer cursus ut arcu at placerat. Donec rhoncus nunc lectus, vitae faucibus lorem laoreet nec. Cras sit amet orci urna. Pellentesque semper eleifend tellus, in malesuada justo imperdiet.</p>
-      </div>
-      <div class="image-overlay-lines"></div>
-    </div>
-
-    <div id="links">
-        <div class="tile tile-1">
-            <p>Toronto</p>
-        </div>
-        <div class="tile tile-2">
-            <p>Miami</p>
-        </div>
-        <div class="tile tile-3">
-            <p>San Francisco</p>
-        </div>
-        <div class="tile tile-4">
-            <p>Los Angeles</p>
-        </div>
-        <div class="tile tile-5">
-            <p>New York City</p>
-        </div>
-    </div>
-
-    <script>
-        $(function () {
-            $('#links').on('click', 'img', function () {
-                alert($(this).attr('alt'));
-            })
-        })
-    </script>
+  </div>
+  <footer>
+    <span class="pull-right">
+      All images &#169; 2000-2018 Vivie Joseph, all rights reserved.
+    </span>
+  </footer>
+  <script src="js/vendor/jquery-1.11.2.min.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.bp_thumbnail > .image').hover(function() {
+        $(this).parent().find('.thumbnail-caption').show();
+      }, function() {
+        $(this).parent().find('.thumbnail-caption').hide();
+      });
+    });
+  </script>
 </body>
 </html>
